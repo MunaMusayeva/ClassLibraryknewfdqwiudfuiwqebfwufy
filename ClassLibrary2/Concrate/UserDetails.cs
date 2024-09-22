@@ -1,10 +1,13 @@
-﻿namespace ClassLibrary2.Concrate;
+﻿using ClassLibrary2.Abstract;
 
-public class UserDetails
+namespace ClassLibrary2.Concrate;
+
+public class UserDetails:Base
 {
-    public int Id { get; set; }
     public string Name { get; set; }
     public string Surname { get; set; }
     public DateTime Birthday { get; set; }
-    public Enum_Role Role { get; set; }
+    public Roles Role { get; set; }
+    public User User { get; set; }
+    
 }

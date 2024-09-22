@@ -1,10 +1,9 @@
 ﻿namespace ClassLibrary2.Concrate;
 
-public class Enum_Role
+public enum Roles
 {
-    enum Role
-    {
+  
         Admin=1,
         User=2
-    }
+    
 }
