@@ -10,9 +10,9 @@ public class BaseRepository<T> : IRepository<T> where T : Base, new()
     private readonly SosialMediaDb _context;
     private readonly DbSet<T> _dbSet;
 
-    public BaseRepository()
+    public BaseRepository(SosialMediaDb dbCONTEXT)
     {
-        _context = new SosialMediaDb();
+        _context = dbCONTEXT;
         _dbSet = _context.Set<T>();
     }
 
